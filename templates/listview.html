@@ -1,0 +1,16 @@
+<h1> LIST</h1>
+
+{% for i in dataset %}
+
+<div>
+    <a href="{% url 'detailview' i.id %}">{{ i.title }}</a> <br>
+
+     <br>
+     
+
+     {{ i.description }}
+
+     <hr>
+</div>
+{% endfor %}
+<hr>

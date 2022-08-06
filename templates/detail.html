@@ -1,0 +1,13 @@
+<h1>DETAIL</h1>
+<div class="main">
+     
+    <!-- Specify fields to be displayed -->
+    {{ data.title }}<br/>
+    {{ data.description }}<br/>
+
+    <hr>
+    <a href="{% url 'updateview' data.id %}">UPDATE</a>
+    <a href="{% url 'deleteview' data.id %}">DELETE</a>
+    
+ 
+</div>
